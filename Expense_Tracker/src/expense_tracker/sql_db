@@ -1,0 +1,11 @@
+CREATE DATABASE expensetracker;
+USE expensetracker;
+CREATE TABLE expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    description VARCHAR(255),
+    amount DECIMAL(10, 2),
+    category VARCHAR(100),
+    date DATE
+);
+INSERT INTO expenses (description, amount, category, date) VALUES ('Groceries', 50.00, 'Food', '2024-09-25');
+select * from expenses;
